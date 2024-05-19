@@ -1,0 +1,96 @@
+//navbar
+
+.nav-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  //   background-color: teal;
+  height: 9.6rem;
+
+  &__logobox--img {
+    // max-width: 15%; dont use if you dont need lol
+
+    height: 3rem;
+
+    // background-color: #e0d959;
+  }
+  &__navlist {
+    display: flex;
+
+    list-style: none;
+    font-family: var(--primary-subheading-font);
+    font-weight: 500;
+    font-size: 2rem;
+    gap: 2rem;
+
+    &-items {
+      text-decoration: none;
+      color: var(--primary-font);
+      border-bottom: 1px solid transparent;
+    }
+    :hover {
+      border-bottom-color: var(--primary-font);
+    }
+  }
+}
+
+// section hero
+
+.section-hero-container {
+  &__textbox {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4rem;
+    justify-content: center;
+
+    &-heading {
+      font-family: var(--primary-font);
+      font-size: 5.2rem;
+      color: var(--primary-font);
+      letter-spacing: 2px;
+      line-height: 0.9;
+    }
+
+    &-subtext {
+      font-family: var(--primary-subheading-font);
+      color: var(--secndary-font);
+      font-size: 3rem;
+      font-weight: 500;
+    }
+
+    &-cta {
+      font-family: var(--primary-font);
+      font-size: 3rem;
+      font-weight: 400;
+      display: inline-block;
+      text-decoration: none;
+    }
+  }
+  &__imgbox {
+    &-img {
+      width: 100%;
+    }
+  }
+}
+
+.btn {
+  padding: 1.5rem 2.5rem;
+  background-color: var(--primary-color);
+  color: white;
+  border-radius: 2rem;
+  transition: transform 0.2s;
+}
+
+.btn:hover {
+  transform: translateY(2px);
+  box-shadow: 10px 7px 9.5px rgba(0, 0, 0, 0.119);
+}
+
+.first-letter {
+  display: inline-block;
+  margin-right: 2px;
+  margin-bottom: 2px;
+  font-size: 8.6rem;
+  color: var(--primary-color);
+}
