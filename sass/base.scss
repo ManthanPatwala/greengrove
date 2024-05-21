@@ -39,6 +39,14 @@ html {
   margin-bottom: 9.6rem;
 }
 
+.margin-bottom-xl {
+  margin-bottom: 9.6rem;
+}
+
+.margin-bottom-l {
+  margin-bottom: 4dvh;
+}
+
 .padding-side {
   padding: 0 1.5rem;
 }
@@ -57,4 +65,21 @@ html {
 
 .grid--2-col {
   grid-template-columns: repeat(2, 1fr);
+}
+
+.grid--4-col {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+// suppportin class
+
+.center-align-txt {
+  text-align: center;
+}
+
+.flex-container-01 {
+  display: flex;
+  justify-content: space-between;
+
+  gap: 1rem;
 }

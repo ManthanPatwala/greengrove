@@ -14,7 +14,8 @@ html {
   --icon-color: #efb215;
   --section-bg: #f1eee9;
   --primary-heading-font: "playfair display", sans-serif;
-  --primary-subheading-font: "IBM Plex Sans", sans-serif; }
+  --primary-subheading-font: "IBM Plex Sans", sans-serif;
+  --primary-box-shadow: 10px 7px 9.5px rgba(0, 0, 0, 0.119); }
 
 .main-container {
   max-width: 114rem; }
@@ -25,6 +26,12 @@ html {
 .marign-top-bottom {
   margin-top: 9.6rem;
   margin-bottom: 9.6rem; }
+
+.margin-bottom-xl {
+  margin-bottom: 9.6rem; }
+
+.margin-bottom-l {
+  margin-bottom: 4dvh; }
 
 .padding-side {
   padding: 0 1.5rem; }
@@ -37,6 +44,17 @@ html {
 
 .grid--2-col {
   grid-template-columns: repeat(2, 1fr); }
+
+.grid--4-col {
+  grid-template-columns: repeat(2, 1fr); }
+
+.center-align-txt {
+  text-align: center; }
+
+.flex-container-01 {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem; }
 
 .nav-bar {
   display: flex;
@@ -94,7 +112,7 @@ html {
   transition: transform 0.2s; }
 
 .btn:hover {
-  transform: translateY(2px);
+  transform: translateY(-2px);
   box-shadow: 10px 7px 9.5px rgba(0, 0, 0, 0.119); }
 
 .first-letter {
@@ -103,3 +121,21 @@ html {
   margin-bottom: 2px;
   font-size: 8.6rem;
   color: var(--primary-color); }
+
+.section-logopannel-container__heading {
+  font-size: 2.5rem;
+  color: var(--primary-color);
+  font-weight: bold; }
+
+.section-logopannel-container__imxbox-img {
+  height: 3.5rem; }
+
+.section-gradning-tips-container__imgbox-img {
+  width: 100%; }
+
+.section-gradning-tips-container__txtbox-heading {
+  font-family: var(--primary-font);
+  font-size: 3rem;
+  color: var(--primary-font);
+  letter-spacing: 2px;
+  line-height: 0.9; }
