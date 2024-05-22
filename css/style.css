@@ -20,6 +20,9 @@ html {
 .main-container {
   max-width: 114rem; }
 
+.small-main-container {
+  max-width: 100rem; }
+
 .maring-side-auto {
   margin: 0 auto; }
 
@@ -31,10 +34,14 @@ html {
   margin-bottom: 9.6rem; }
 
 .margin-bottom-l {
-  margin-bottom: 4dvh; }
+  margin-bottom: 4rem; }
 
 .padding-side {
   padding: 0 1.5rem; }
+
+.padding-top-bottom {
+  padding-top: 4.8rem;
+  padding-bottom: 4.8rem; }
 
 .undeline {
   border-bottom: 1px solid var(--primary-font); }
@@ -44,6 +51,9 @@ html {
 
 .grid--2-col {
   grid-template-columns: repeat(2, 1fr); }
+
+.grid-gap-small {
+  column-gap: 5rem; }
 
 .grid--4-col {
   grid-template-columns: repeat(2, 1fr); }
@@ -55,6 +65,18 @@ html {
   display: flex;
   justify-content: space-between;
   gap: 1rem; }
+
+.first-letter-style {
+  display: inline;
+  margin-right: 2px;
+  margin-bottom: 2px;
+  color: var(--primary-color); }
+
+.first-letter-style-font-xl {
+  font-size: 8.6rem; }
+
+.first-letter-style-font-l {
+  font-size: 6.4rem; }
 
 .nav-bar {
   display: flex;
@@ -115,13 +137,6 @@ html {
   transform: translateY(-2px);
   box-shadow: 10px 7px 9.5px rgba(0, 0, 0, 0.119); }
 
-.first-letter {
-  display: inline-block;
-  margin-right: 2px;
-  margin-bottom: 2px;
-  font-size: 8.6rem;
-  color: var(--primary-color); }
-
 .section-logopannel-container__heading {
   font-size: 2.5rem;
   color: var(--primary-color);
@@ -133,9 +148,35 @@ html {
 .section-gradning-tips-container__imgbox-img {
   width: 100%; }
 
-.section-gradning-tips-container__txtbox-heading {
+.section-gradning-tips-container__txtbox {
+  align-self: center; }
+  .section-gradning-tips-container__txtbox-list {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    gap: 3rem; }
+    .section-gradning-tips-container__txtbox-list_iteams {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      font-size: 2.4rem;
+      font-weight: 600;
+      font-family: var(--primary-subheading-font); }
+  .section-gradning-tips-container__txtbox-heading {
+    font-family: var(--primary-font);
+    font-size: 3rem;
+    color: var(--primary-font);
+    letter-spacing: 1px;
+    line-height: 1;
+    margin-bottom: 4rem;
+    font-weight: 700; }
+
+.section-find-plants {
+  background-color: var(--section-bg); }
+
+.section-find-plants-container__txtbox-heading {
   font-family: var(--primary-font);
   font-size: 3rem;
   color: var(--primary-font);
-  letter-spacing: 2px;
-  line-height: 0.9; }
+  letter-spacing: 1px;
+  line-height: 1; }

@@ -87,14 +87,6 @@
   box-shadow: 10px 7px 9.5px rgba(0, 0, 0, 0.119);
 }
 
-.first-letter {
-  display: inline-block;
-  margin-right: 2px;
-  margin-bottom: 2px;
-  font-size: 8.6rem;
-  color: var(--primary-color);
-}
-
 // logo pannerl
 
 .section-logopannel-container {
@@ -107,7 +99,7 @@
   &__imxbox {
     &-img {
       height: 3.5rem;
-      // background-color: red;
+      //
     }
   }
 }
@@ -122,12 +114,49 @@
   }
 
   &__txtbox {
+    align-self: center;
+
+    &-list {
+      display: flex;
+      flex-direction: column;
+      list-style: none;
+      gap: 3rem;
+
+      &_iteams {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        font-size: 2.4rem;
+        font-weight: 600;
+        font-family: var(--primary-subheading-font);
+      }
+    }
     &-heading {
       font-family: var(--primary-font);
       font-size: 3rem;
       color: var(--primary-font);
-      letter-spacing: 2px;
-      line-height: 0.9;
+      letter-spacing: 1px;
+      line-height: 1;
+      margin-bottom: 4rem;
+      font-weight: 700;
+    }
+  }
+}
+
+//section-find-plants
+
+.section-find-plants {
+  background-color: var(--section-bg);
+}
+
+.section-find-plants-container {
+  &__txtbox {
+    &-heading {
+      font-family: var(--primary-font);
+      font-size: 3rem;
+      color: var(--primary-font);
+      letter-spacing: 1px;
+      line-height: 1;
     }
   }
 }

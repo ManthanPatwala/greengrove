@@ -30,6 +30,10 @@ html {
   max-width: 114rem;
 }
 
+.small-main-container {
+  max-width: 100rem;
+}
+
 .maring-side-auto {
   margin: 0 auto;
 }
@@ -44,11 +48,16 @@ html {
 }
 
 .margin-bottom-l {
-  margin-bottom: 4dvh;
+  margin-bottom: 4rem;
 }
 
 .padding-side {
   padding: 0 1.5rem;
+}
+
+.padding-top-bottom {
+  padding-top: 4.8rem;
+  padding-bottom: 4.8rem;
 }
 
 // header {
@@ -67,6 +76,10 @@ html {
   grid-template-columns: repeat(2, 1fr);
 }
 
+.grid-gap-small {
+  column-gap: 5rem;
+}
+
 .grid--4-col {
   grid-template-columns: repeat(2, 1fr);
 }
@@ -82,4 +95,19 @@ html {
   justify-content: space-between;
 
   gap: 1rem;
+}
+
+.first-letter-style {
+  display: inline;
+  margin-right: 2px;
+  margin-bottom: 2px;
+
+  color: var(--primary-color);
+}
+
+.first-letter-style-font-xl {
+  font-size: 8.6rem;
+}
+.first-letter-style-font-l {
+  font-size: 6.4rem;
 }
