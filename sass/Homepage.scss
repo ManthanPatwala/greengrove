@@ -136,7 +136,7 @@
       font-size: 3rem;
       color: var(--primary-font);
       letter-spacing: 1px;
-      line-height: 1;
+      line-height: 1.2;
       margin-bottom: 4rem;
       font-weight: 700;
     }
@@ -151,12 +151,55 @@
 
 .section-find-plants-container {
   &__txtbox {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2.5rem;
+
+    &-cta {
+      font-size: 2.4rem;
+      text-decoration: none;
+      color: white;
+    }
+
     &-heading {
-      font-family: var(--primary-font);
       font-size: 3rem;
       color: var(--primary-font);
       letter-spacing: 1px;
       line-height: 1;
+    }
+
+    &-subheding {
+      font-family: var(--primary-subheading-font);
+      font-size: 2.4rem;
+      font-weight: 600;
+    }
+  }
+
+  &__plantlist {
+    &-item1 {
+      box-shadow: var(--primary-box-shadow);
+      &-img {
+        width: 100%;
+        display: block;
+      }
+
+      &-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem;
+        background-color: var(--base-color);
+
+        &-title {
+          font-size: 2rem;
+          font-weight: bold;
+        }
+
+        &-tick {
+          height: 2rem;
+        }
+      }
     }
   }
 }

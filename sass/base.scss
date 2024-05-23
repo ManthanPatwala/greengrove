@@ -6,6 +6,7 @@
 
 html {
   font-size: 62.5%;
+  scroll-behavior: smooth;
 
   //seting default font as 10px - 10/16px = 0.625 = 62.5
 }
@@ -76,6 +77,10 @@ html {
   grid-template-columns: repeat(2, 1fr);
 }
 
+.grid--3-col {
+  grid-template-columns: repeat(3, 1fr);
+}
+
 .grid-gap-small {
   column-gap: 5rem;
 }
@@ -98,9 +103,9 @@ html {
 }
 
 .first-letter-style {
-  display: inline;
-  margin-right: 2px;
-  margin-bottom: 2px;
+  display: inline-block;
+  // margin-right: 2px;
+  // margin-bottom: 2px;
 
   color: var(--primary-color);
 }
@@ -110,4 +115,8 @@ html {
 }
 .first-letter-style-font-l {
   font-size: 6.4rem;
+  // background-color: tan;
+}
+
+.checking {
 }

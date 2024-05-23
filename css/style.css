@@ -4,7 +4,8 @@
   box-sizing: border-box; }
 
 html {
-  font-size: 62.5%; }
+  font-size: 62.5%;
+  scroll-behavior: smooth; }
 
 :root {
   --primary-color: #224e41;
@@ -52,6 +53,9 @@ html {
 .grid--2-col {
   grid-template-columns: repeat(2, 1fr); }
 
+.grid--3-col {
+  grid-template-columns: repeat(3, 1fr); }
+
 .grid-gap-small {
   column-gap: 5rem; }
 
@@ -67,9 +71,7 @@ html {
   gap: 1rem; }
 
 .first-letter-style {
-  display: inline;
-  margin-right: 2px;
-  margin-bottom: 2px;
+  display: inline-block;
   color: var(--primary-color); }
 
 .first-letter-style-font-xl {
@@ -167,16 +169,45 @@ html {
     font-size: 3rem;
     color: var(--primary-font);
     letter-spacing: 1px;
-    line-height: 1;
+    line-height: 1.2;
     margin-bottom: 4rem;
     font-weight: 700; }
 
 .section-find-plants {
   background-color: var(--section-bg); }
 
-.section-find-plants-container__txtbox-heading {
-  font-family: var(--primary-font);
-  font-size: 3rem;
-  color: var(--primary-font);
-  letter-spacing: 1px;
-  line-height: 1; }
+.section-find-plants-container__txtbox {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 2.5rem; }
+  .section-find-plants-container__txtbox-cta {
+    font-size: 2.4rem;
+    text-decoration: none;
+    color: white; }
+  .section-find-plants-container__txtbox-heading {
+    font-size: 3rem;
+    color: var(--primary-font);
+    letter-spacing: 1px;
+    line-height: 1; }
+  .section-find-plants-container__txtbox-subheding {
+    font-family: var(--primary-subheading-font);
+    font-size: 2.4rem;
+    font-weight: 600; }
+
+.section-find-plants-container__plantlist-item1 {
+  box-shadow: var(--primary-box-shadow); }
+  .section-find-plants-container__plantlist-item1-img {
+    width: 100%;
+    display: block; }
+  .section-find-plants-container__plantlist-item1-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: var(--base-color); }
+    .section-find-plants-container__plantlist-item1-container-title {
+      font-size: 2rem;
+      font-weight: bold; }
+    .section-find-plants-container__plantlist-item1-container-tick {
+      height: 2rem; }
