@@ -44,6 +44,11 @@ html {
   margin-bottom: 9.6rem;
 }
 
+.marign-top-bottom-md {
+  margin-top: 4.6rem;
+  margin-bottom: 4.6rem;
+}
+
 .margin-bottom-xl {
   margin-bottom: 9.6rem;
 }
@@ -52,12 +57,20 @@ html {
   margin-bottom: 4rem;
 }
 
+.margin-bottom-md {
+  margin-bottom: 1rem;
+}
+
 .padding-side {
   padding: 0 1.5rem;
 }
 
 .padding-top-bottom {
   padding-top: 4.8rem;
+  padding-bottom: 4.8rem;
+}
+
+.padding-bottom {
   padding-bottom: 4.8rem;
 }
 
@@ -86,7 +99,7 @@ html {
 }
 
 .grid--4-col {
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(4, 1fr);
 }
 
 // suppportin class
@@ -108,6 +121,7 @@ html {
   // margin-bottom: 2px;
 
   color: var(--primary-color);
+  line-height: 0.75em;
 }
 
 .first-letter-style-font-xl {
@@ -116,7 +130,4 @@ html {
 .first-letter-style-font-l {
   font-size: 6.4rem;
   // background-color: tan;
-}
-
-.checking {
 }

@@ -31,17 +31,27 @@ html {
   margin-top: 9.6rem;
   margin-bottom: 9.6rem; }
 
+.marign-top-bottom-md {
+  margin-top: 4.6rem;
+  margin-bottom: 4.6rem; }
+
 .margin-bottom-xl {
   margin-bottom: 9.6rem; }
 
 .margin-bottom-l {
   margin-bottom: 4rem; }
 
+.margin-bottom-md {
+  margin-bottom: 1rem; }
+
 .padding-side {
   padding: 0 1.5rem; }
 
 .padding-top-bottom {
   padding-top: 4.8rem;
+  padding-bottom: 4.8rem; }
+
+.padding-bottom {
   padding-bottom: 4.8rem; }
 
 .undeline {
@@ -60,7 +70,7 @@ html {
   column-gap: 5rem; }
 
 .grid--4-col {
-  grid-template-columns: repeat(2, 1fr); }
+  grid-template-columns: repeat(4, 1fr); }
 
 .center-align-txt {
   text-align: center; }
@@ -72,7 +82,8 @@ html {
 
 .first-letter-style {
   display: inline-block;
-  color: var(--primary-color); }
+  color: var(--primary-color);
+  line-height: 0.75em; }
 
 .first-letter-style-font-xl {
   font-size: 8.6rem; }
@@ -131,9 +142,23 @@ html {
 .btn {
   padding: 1.5rem 2.5rem;
   background-color: var(--primary-color);
-  color: white;
+  color: var(--base-color);
   border-radius: 2rem;
   transition: transform 0.2s; }
+
+.btn-2 {
+  padding: 1.5rem 2.5rem;
+  background-color: var(--base-color);
+  color: var(--primary-font);
+  border-radius: 2rem;
+  border: 1px solid var(--primary-color);
+  transition: transform 0.2s; }
+
+.btn-2:hover {
+  background-color: var(--primary-color);
+  color: var(--base-color);
+  transform: translateY(-2px);
+  box-shadow: 10px 7px 9.5px rgba(0, 0, 0, 0.119); }
 
 .btn:hover {
   transform: translateY(-2px);
@@ -211,3 +236,80 @@ html {
       font-weight: bold; }
     .section-find-plants-container__plantlist-item1-container-tick {
       height: 2rem; }
+
+.section {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out; }
+
+.section.visible {
+  opacity: 1;
+  transform: translateY(0); }
+
+.sectction-sustainable-garden-container__textbox {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  align-items: flex-start;
+  justify-content: center; }
+  .sectction-sustainable-garden-container__textbox-heading {
+    font-size: 3rem;
+    color: var(--primary-font);
+    letter-spacing: 1px;
+    line-height: 1; }
+  .sectction-sustainable-garden-container__textbox-subtext {
+    font-family: var(--primary-subheading-font);
+    font-size: 2.4rem;
+    font-weight: 600; }
+  .sectction-sustainable-garden-container__textbox-ctasection {
+    display: flex;
+    gap: 3rem; }
+    .sectction-sustainable-garden-container__textbox-ctasection-cta {
+      font-size: 2.4rem;
+      text-decoration: none; }
+
+.sectction-sustainable-garden-container__imgbox-img {
+  width: 100%; }
+
+.sectction-sustainable-garden-container__numbers {
+  font-family: var(--primary-subheading-font); }
+  .sectction-sustainable-garden-container__numbers-list-heading {
+    font-size: 5.2rem;
+    color: var(--icon-color);
+    line-height: 5rem; }
+  .sectction-sustainable-garden-container__numbers-list-subheading {
+    font-size: 2.4rem;
+    line-height: 2.8rem; }
+
+.sectction-sustainable-garden-container__imgbox2-img {
+  width: 100%; }
+
+.section-followus {
+  background-color: var(--section-bg); }
+
+.section-followus-container__txtbox {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 2.5rem; }
+  .section-followus-container__txtbox-cta {
+    font-size: 2.4rem;
+    text-decoration: none;
+    color: white; }
+  .section-followus-container__txtbox-heading {
+    font-size: 3rem;
+    color: var(--primary-font);
+    letter-spacing: 1px;
+    line-height: 1; }
+  .section-followus-container__txtbox-subheding {
+    font-family: var(--primary-subheading-font);
+    font-size: 2.4rem;
+    font-weight: 600; }
+
+.section-followus-gallery-container {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  overflow: hidden; }
+  .section-followus-gallery-container-imgbox-img {
+    width: 30rem; }

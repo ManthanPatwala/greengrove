@@ -77,9 +77,25 @@
 .btn {
   padding: 1.5rem 2.5rem;
   background-color: var(--primary-color);
-  color: white;
+  color: var(--base-color);
   border-radius: 2rem;
   transition: transform 0.2s;
+}
+
+.btn-2 {
+  padding: 1.5rem 2.5rem;
+  background-color: var(--base-color);
+  color: var(--primary-font);
+  border-radius: 2rem;
+  border: 1px solid var(--primary-color);
+  transition: transform 0.2s;
+}
+
+.btn-2:hover {
+  background-color: var(--primary-color);
+  color: var(--base-color);
+  transform: translateY(-2px);
+  box-shadow: 10px 7px 9.5px rgba(0, 0, 0, 0.119);
 }
 
 .btn:hover {
@@ -203,3 +219,156 @@
     }
   }
 }
+
+// aniamtino checking wih gpt bro - working i guess
+
+.section {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.section.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+// sustainable plant
+
+.sectction-sustainable-garden-container {
+  &__textbox {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    align-items: flex-start;
+    justify-content: center;
+
+    &-heading {
+      font-size: 3rem;
+      color: var(--primary-font);
+      letter-spacing: 1px;
+      line-height: 1;
+    }
+
+    &-subtext {
+      font-family: var(--primary-subheading-font);
+      font-size: 2.4rem;
+      font-weight: 600;
+    }
+
+    &-ctasection {
+      display: flex;
+      gap: 3rem;
+
+      &-cta {
+        font-size: 2.4rem;
+        text-decoration: none;
+      }
+    }
+  }
+
+  &__imgbox {
+    &-img {
+      width: 100%;
+    }
+  }
+
+  &__numbers {
+    font-family: var(--primary-subheading-font);
+
+    &-list {
+      &-heading {
+        font-size: 5.2rem;
+        color: var(--icon-color);
+
+        line-height: 5rem;
+      }
+      &-subheading {
+        font-size: 2.4rem;
+
+        line-height: 2.8rem;
+      }
+    }
+  }
+
+  &__imgbox2 {
+    &-img {
+      width: 100%;
+    }
+  }
+}
+
+.section-followus {
+  background-color: var(--section-bg);
+}
+
+.section-followus {
+  &-container {
+    &__txtbox {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 2.5rem;
+
+      &-cta {
+        font-size: 2.4rem;
+        text-decoration: none;
+        color: white;
+      }
+
+      &-heading {
+        font-size: 3rem;
+        color: var(--primary-font);
+        letter-spacing: 1px;
+        line-height: 1;
+      }
+
+      &-subheding {
+        font-family: var(--primary-subheading-font);
+        font-size: 2.4rem;
+        font-weight: 600;
+      }
+    }
+  }
+
+  &-gallery-container {
+    display: flex;
+
+    justify-content: center;
+    gap: 3rem;
+    overflow: hidden;
+    &-imgbox {
+      &-img {
+        width: 30rem;
+      }
+    }
+  }
+}
+
+// .section-followus-container {
+//   &__txtbox {
+//     display: flex;
+//     flex-direction: column;
+//     align-items: flex-start;
+//     gap: 2.5rem;
+
+//     &-cta {
+//       font-size: 2.4rem;
+//       text-decoration: none;
+//       color: white;
+//     }
+
+//     &-heading {
+//       font-size: 3rem;
+//       color: var(--primary-font);
+//       letter-spacing: 1px;
+//       line-height: 1;
+//     }
+
+//     &-subheding {
+//       font-family: var(--primary-subheading-font);
+//       font-size: 2.4rem;
+//       font-weight: 600;
+//     }
+//   }
+// }
