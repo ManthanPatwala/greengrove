@@ -44,9 +44,8 @@ html {
   margin-bottom: 9.6rem;
 }
 
-.marign-top-bottom-md {
+.margin-top-bottom-sm {
   margin-top: 4.6rem;
-  margin-bottom: 4.6rem;
 }
 
 .margin-bottom-xl {
@@ -68,6 +67,15 @@ html {
 .padding-top-bottom {
   padding-top: 4.8rem;
   padding-bottom: 4.8rem;
+}
+
+.padding-top-bottom-max {
+  padding-top: 9.6rem;
+  padding-bottom: 9.6rem;
+}
+
+.padding-bottom-max {
+  padding-bottom: 9.6rem;
 }
 
 .padding-bottom {
@@ -102,6 +110,10 @@ html {
   grid-template-columns: repeat(4, 1fr);
 }
 
+.grid--4-col-sm {
+  grid-template-columns: repeat(4, 0.8fr);
+}
+
 // suppportin class
 
 .center-align-txt {
@@ -130,4 +142,8 @@ html {
 .first-letter-style-font-l {
   font-size: 6.4rem;
   // background-color: tan;
+}
+
+.border-section {
+  border: 1px var(--secndary-font) solid;
 }
