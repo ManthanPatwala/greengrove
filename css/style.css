@@ -54,6 +54,9 @@ html {
   padding-top: 9.6rem;
   padding-bottom: 9.6rem; }
 
+.padding-top-max {
+  padding-top: 9.6rem; }
+
 .padding-bottom-max {
   padding-bottom: 9.6rem; }
 
@@ -213,41 +216,44 @@ html {
 .section-find-plants {
   background-color: var(--section-bg); }
 
-.section-find-plants-container__txtbox {
+.section-find-plants-container {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  gap: 2.5rem; }
-  .section-find-plants-container__txtbox-cta {
-    font-size: 2.4rem;
-    text-decoration: none;
-    color: white; }
-  .section-find-plants-container__txtbox-heading {
-    font-size: 3rem;
-    color: var(--primary-font);
-    letter-spacing: 1px;
-    line-height: 1; }
-  .section-find-plants-container__txtbox-subheding {
-    font-family: var(--primary-subheading-font);
-    font-size: 2.4rem;
-    font-weight: 600; }
-
-.section-find-plants-container__plantlist-item1 {
-  box-shadow: var(--primary-box-shadow); }
-  .section-find-plants-container__plantlist-item1-img {
-    width: 100%;
-    display: block; }
-  .section-find-plants-container__plantlist-item1-container {
+  gap: 5rem; }
+  .section-find-plants-container__txtbox {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem;
-    background-color: var(--base-color); }
-    .section-find-plants-container__plantlist-item1-container-title {
-      font-size: 2rem;
-      font-weight: bold; }
-    .section-find-plants-container__plantlist-item1-container-tick {
-      height: 2rem; }
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2.5rem; }
+    .section-find-plants-container__txtbox-cta {
+      font-size: 2.4rem;
+      text-decoration: none;
+      color: white; }
+    .section-find-plants-container__txtbox-heading {
+      font-size: 3rem;
+      color: var(--primary-font);
+      letter-spacing: 1px;
+      line-height: 1; }
+    .section-find-plants-container__txtbox-subheding {
+      font-family: var(--primary-subheading-font);
+      font-size: 2.4rem;
+      font-weight: 600; }
+  .section-find-plants-container__plantlist-item1 {
+    box-shadow: var(--primary-box-shadow); }
+    .section-find-plants-container__plantlist-item1-img {
+      width: 100%;
+      display: block; }
+    .section-find-plants-container__plantlist-item1-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem;
+      background-color: var(--base-color); }
+      .section-find-plants-container__plantlist-item1-container-title {
+        font-size: 2rem;
+        font-weight: bold; }
+      .section-find-plants-container__plantlist-item1-container-tick {
+        height: 2rem; }
 
 .section {
   opacity: 0;
@@ -297,29 +303,34 @@ html {
   width: 100%; }
 
 .section-followus {
-  background-color: var(--section-bg); }
-
-.section-followus-container__txtbox {
+  background-color: var(--section-bg);
   display: flex;
+  align-items: center;
   flex-direction: column;
-  align-items: flex-start;
-  gap: 2.5rem; }
-  .section-followus-container__txtbox-cta {
-    font-size: 2.4rem;
-    text-decoration: none;
-    color: white; }
-  .section-followus-container__txtbox-heading {
-    font-size: 3rem;
-    color: var(--primary-font);
-    letter-spacing: 1px;
-    line-height: 1; }
-  .section-followus-container__txtbox-subheding {
-    font-family: var(--primary-subheading-font);
-    font-size: 2.4rem;
-    font-weight: 600; }
-
-.section-followus-gallery-container-imgbox-img {
-  width: 30rem; }
+  gap: 4rem; }
+  .section-followus-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2.5rem; }
+    .section-followus-container__heading {
+      font-size: 3rem;
+      color: var(--primary-font);
+      letter-spacing: 1px;
+      line-height: 1; }
+    .section-followus-container__subheding {
+      font-family: var(--primary-subheading-font);
+      font-size: 2.4rem;
+      font-weight: 600; }
+    .section-followus-container__cta {
+      font-size: 2.4rem;
+      text-decoration: none;
+      color: white; }
+  .section-followus-gallerycontainer {
+    display: flex;
+    gap: 2rem; }
+    .section-followus-gallerycontainer__imgbox-img {
+      width: 30rem; }
 
 .section-footer-container {
   display: flex;

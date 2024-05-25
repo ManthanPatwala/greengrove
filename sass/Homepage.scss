@@ -4,7 +4,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  //   background-color: teal;
+  // background-color: teal;
   height: 9.6rem;
 
   &__logobox--img {
@@ -166,6 +166,10 @@
 }
 
 .section-find-plants-container {
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+
   &__txtbox {
     display: flex;
     flex-direction: column;
@@ -300,78 +304,47 @@
 
 .section-followus {
   background-color: var(--section-bg);
-}
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 4rem;
 
-.section-followus {
   &-container {
-    &__txtbox {
-      display: flex;
-      flex-direction: column;
-      align-items: flex-start;
-      gap: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2.5rem;
 
-      &-cta {
-        font-size: 2.4rem;
-        text-decoration: none;
-        color: white;
-      }
+    &__heading {
+      font-size: 3rem;
+      color: var(--primary-font);
+      letter-spacing: 1px;
+      line-height: 1;
+    }
 
-      &-heading {
-        font-size: 3rem;
-        color: var(--primary-font);
-        letter-spacing: 1px;
-        line-height: 1;
-      }
+    &__subheding {
+      font-family: var(--primary-subheading-font);
+      font-size: 2.4rem;
+      font-weight: 600;
+    }
 
-      &-subheding {
-        font-family: var(--primary-subheading-font);
-        font-size: 2.4rem;
-        font-weight: 600;
-      }
+    &__cta {
+      font-size: 2.4rem;
+      text-decoration: none;
+      color: white;
     }
   }
 
-  &-gallery-container {
-    // display: flex;
-
-    // justify-content: center;
-    // gap: 3rem;
-    // overflow: hidden;
-    &-imgbox {
+  &-gallerycontainer {
+    display: flex;
+    gap: 2rem;
+    &__imgbox {
       &-img {
         width: 30rem;
       }
     }
   }
 }
-
-// .section-followus-container {
-//   &__txtbox {
-//     display: flex;
-//     flex-direction: column;
-//     align-items: flex-start;
-//     gap: 2.5rem;
-
-//     &-cta {
-//       font-size: 2.4rem;
-//       text-decoration: none;
-//       color: white;
-//     }
-
-//     &-heading {
-//       font-size: 3rem;
-//       color: var(--primary-font);
-//       letter-spacing: 1px;
-//       line-height: 1;
-//     }
-
-//     &-subheding {
-//       font-family: var(--primary-subheading-font);
-//       font-size: 2.4rem;
-//       font-weight: 600;
-//     }
-//   }
-// }
 
 //footer
 
